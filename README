@@ -1,0 +1,7 @@
+Why:
+    This is a quick-and-dirty preview, for now that I don't check prices as often.
+    (See https://za3k.com/archived.html for archived by-hand surveys.)
+How it works:
+    Using diskprices.com, show the best-in-category for each drive type (new only)
+How to run:
+    Run 'make' to generate a summary.
