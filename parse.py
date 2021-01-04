@@ -54,5 +54,4 @@ if __name__ == '__main__':
     for c in sorted(classes.keys()):
         e = classes[c][0]
         if len(classes[c]) > 5:
-            print(c[0], c[1], e["price"], e["price-per-tb"], e["form-factor"])# e["link"])
-        #print(c, classes[c][0])
+            print(c[0], c[1], e["price"], e["price-per-tb"], e["form-factor"], e["link"])
