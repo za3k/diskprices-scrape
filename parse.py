@@ -10,7 +10,7 @@ def parse(soup):
         e["name"] = name.text
         e["link"] = name.find("a")["href"]
         for attr, val in entry.attrs.items():
-            if attr.startswith("data-"):
+            if attr.startswith("data-") and attr != "data-capacity":
                 e[attr.removeprefix("data-")] = val
         entries.append(e)
     return entries
