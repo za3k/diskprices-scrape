@@ -12,7 +12,7 @@ def parse(soup):
         e["link"] = name.find("a")["href"]
         for attr, val in entry.attrs.items():
             if attr.startswith("data-") and attr != "data-capacity":
-                e[attr.removeprefix("data-")] = val
+                e[attr[len("data-"):]] = val
         entries.append(e)
     return entries
 
