@@ -1,3 +1,4 @@
+import sys
 from bs4 import BeautifulSoup
 from collections import defaultdict
 
@@ -41,7 +42,7 @@ def class_for(entry):
     return e["technology"], Capacity(e["capacity"])
 
 if __name__ == '__main__':
-    with open("index.html") as f:
+    with open(sys.argv[1]) as f:
         html_text = f.read()
     soup = BeautifulSoup(html_text, 'html.parser')
     entries = parse(soup)
